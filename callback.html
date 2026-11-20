@@ -1,0 +1,8 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Callback - Garis Pikir Studio</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;color:#1d1d1b;background:#fdfdfc}code,textarea{word-break:break-all}textarea{width:100%;height:5em}@media(prefers-color-scheme:dark){body{background:#161614;color:#ece9e2}textarea{background:#222;color:#eee}}</style></head><body>
+<h1>Otorisasi selesai</h1>
+<p>Salin seluruh alamat halaman ini (dari bilah alamat browser), lalu tempel di terminal Garis Pikir Studio. Halaman ini tidak mengirim apa pun ke server mana pun.</p>
+<textarea id="u" readonly></textarea><p id="s"></p>
+<script>var q=new URLSearchParams(location.search);document.getElementById('u').value=location.href;
+document.getElementById('s').textContent=q.get('error')?('Ditolak: '+q.get('error')):(q.get('code')?'Kode otorisasi diterima.':'Tidak ada kode di alamat ini.');</script>
+</body></html>
